@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Protótipo FightZone — loja</title>
+  <desc id="desc">Tela desktop da loja FightZone com navegação, destaque de artigos de boxe e cartões de produtos.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f1eb}.white{fill:#fffefa}.dark{fill:#171816}.muted{fill:#777870}.orange{fill:#d8432e}.title{fill:#171816;font:bold 29px Arial,sans-serif}.body{fill:#252a32;font:16px Arial,sans-serif}.nav{fill:#fffefa;font:16px Arial,sans-serif}.small{fill:#777870;font:13px Arial,sans-serif}.button{fill:#fffefa;font:bold 14px Arial,sans-serif}.cardtitle{fill:#171816;font:bold 16px Arial,sans-serif}.price{fill:#171816;font:bold 20px Arial,sans-serif}.brand{fill:#fffefa;font:bold 23px Arial,sans-serif;letter-spacing:3px}
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="1000"/>
+  <rect class="dark" width="1440" height="92"/>
+  <text class="brand" x="76" y="56">FIGHT<tspan fill="#e45a42">ZONE</tspan></text>
+  <text class="nav" x="390" y="56">Início</text><text class="nav" x="480" y="56">Produtos</text>
+  <text class="nav" x="610" y="56">Sobre</text><text class="nav" x="710" y="56">Contato</text>
+  <rect x="1065" y="25" width="250" height="42" rx="8" fill="#292a26" stroke="#52534d"/>
+  <text class="small" x="1084" y="52" fill="#c1c0b8">Buscar artigos de boxe</text>
+  <rect x="1335" y="23" width="52" height="46" rx="8" fill="#d8432e"/>
+  <text class="button" x="1361" y="52" text-anchor="middle">0</text>
+  <rect x="58" y="128" width="1324" height="370" rx="18" fill="#20211e"/>
+  <circle cx="1176" cy="324" r="205" fill="#d8432e" opacity=".16"/>
+  <circle cx="1195" cy="314" r="132" fill="#d8432e" opacity=".22"/>
+  <text x="100" y="194" fill="#f0a08f" font-family="Arial" font-size="14" font-weight="bold" letter-spacing="3">EQUIPAMENTO PARA QUEM VIVE O BOXE</text>
+  <text x="100" y="260" fill="#fffefa" font-family="Arial" font-size="46" font-weight="bold">Treine forte.</text>
+  <text x="100" y="315" fill="#fffefa" font-family="Arial" font-size="46" font-weight="bold">Lute com propósito.</text>
+  <text x="100" y="358" fill="#c1c0b8" font-family="Arial" font-size="18">Encontre luvas, proteção e acessórios para o próximo round.</text>
+  <rect x="100" y="399" width="194" height="54" rx="9" fill="#d8432e"/>
+  <text class="button" x="197" y="432" text-anchor="middle">Explorar produtos</text>
+  <circle cx="1190" cy="302" r="82" fill="#f4f1eb" opacity=".95"/>
+  <path d="M1155 282c13-23 42-31 63-17 20 13 27 38 14 57l-22 31-73-37z" fill="#d8432e"/>
+  <path d="M1142 315l70 36m-56-53 68 36m-49-54 65 34" stroke="#fffefa" stroke-width="8" stroke-linecap="round"/>
+  <text class="title" x="72" y="565">Destaques da loja</text>
+  <text class="small" x="72" y="594">Equipamentos selecionados para seu treino</text>
+  <g transform="translate(72 624)">
+    <rect class="white" width="300" height="300" rx="12" stroke="#dedbd4"/>
+    <rect x="16" y="16" width="268" height="160" rx="9" fill="#ece8df"/>
+    <circle cx="150" cy="96" r="52" fill="#d8432e"/><path d="M118 91q32-34 65 0l-18 34-52-16z" fill="#171816"/>
+    <text class="small" x="20" y="209">LUVAS</text><text class="cardtitle" x="20" y="236">Luva Title Boxing</text>
+    <text class="price" x="20" y="274">R$ 699,90</text><text class="small" x="266" y="274" text-anchor="end">Ver produto →</text>
+  </g>
+  <g transform="translate(402 624)">
+    <rect class="white" width="300" height="300" rx="12" stroke="#dedbd4"/>
+    <rect x="16" y="16" width="268" height="160" rx="9" fill="#ece8df"/>
+    <circle cx="150" cy="96" r="52" fill="#171816"/><path d="M121 71h58v68h-58z" fill="#d8432e"/><path d="M127 84h46m-46 17h46m-46 17h46" stroke="#fffefa" stroke-width="5"/>
+    <text class="small" x="20" y="209">PROTEÇÃO</text><text class="cardtitle" x="20" y="236">Bucal Maximum</text>
+    <text class="price" x="20" y="274">R$ 79,90</text><text class="small" x="266" y="274" text-anchor="end">Ver produto →</text>
+  </g>
+  <g transform="translate(732 624)">
+    <rect class="white" width="300" height="300" rx="12" stroke="#dedbd4"/>
+    <rect x="16" y="16" width="268" height="160" rx="9" fill="#ece8df"/>
+    <circle cx="150" cy="96" r="52" fill="#d8432e"/><path d="M121 65h58v67h-58z" fill="#171816"/><path d="M130 78h40m-40 14h40m-40 14h40" stroke="#d8432e" stroke-width="5"/>
+    <text class="small" x="20" y="209">BANDAGENS</text><text class="cardtitle" x="20" y="236">Bandagem Elástica</text>
+    <text class="price" x="20" y="274">R$ 69,90</text><text class="small" x="266" y="274" text-anchor="end">Ver produto →</text>
+  </g>
+  <g transform="translate(1062 624)">
+    <rect class="white" width="300" height="300" rx="12" stroke="#dedbd4"/>
+    <rect x="16" y="16" width="268" height="160" rx="9" fill="#ece8df"/>
+    <circle cx="150" cy="96" r="52" fill="#171816"/><path d="M134 52h32v88h-32z" fill="#d8432e"/><path d="M134 81h32m-32 19h32" stroke="#fffefa" stroke-width="6"/>
+    <text class="small" x="20" y="209">TREINO</text><text class="cardtitle" x="20" y="236">Saco de Pancadas</text>
+    <text class="price" x="20" y="274">R$ 899,90</text><text class="small" x="266" y="274" text-anchor="end">Ver produto →</text>
+  </g>
+  <text class="small" x="72" y="970">FIGHTZONE • Protótipo visual para avaliação acadêmica</text>
+</svg>

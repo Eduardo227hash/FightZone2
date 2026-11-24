@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">UML de sequência: cancelamento de pedido</title>
+  <desc id="desc">Sequência do cancelamento solicitado pelo cliente autenticado, com verificação da titularidade e situação, devolução transacional dos produtos e registro das entradas de estoque.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f1eb}.box{fill:#fffefa;stroke:#171816;stroke-width:2}.lifeline{stroke:#92938c;stroke-width:2;stroke-dasharray:8 7}.msg{stroke:#d8432e;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.return{stroke:#777870;stroke-width:2;fill:none;stroke-dasharray:7 5;marker-end:url(#arrowGray)}.title{fill:#171816;font:bold 22px Arial,sans-serif}.head{fill:#171816;font:bold 15px Arial,sans-serif}.text{fill:#252a32;font:15px Arial,sans-serif}.small{fill:#66675f;font:13px Arial,sans-serif}.frame{fill:#fffefa;stroke:#d8432e;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d8432e"/></marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#777870"/></marker>
+  </defs>
+  <rect class="bg" width="900" height="1100" rx="18"/>
+  <text class="title" x="450" y="40" text-anchor="middle">UML • Cancelamento de pedido</text>
+  <g>
+    <rect class="box" x="15" y="68" width="150" height="56" rx="8"/><text class="head" x="90" y="102" text-anchor="middle">Navegador</text>
+    <rect class="box" x="195" y="68" width="150" height="56" rx="8"/><text class="head" x="270" y="90" text-anchor="middle">ClienteController</text><text class="small" x="270" y="111" text-anchor="middle">cancelarPedido</text>
+    <rect class="box" x="375" y="68" width="150" height="56" rx="8"/><text class="head" x="450" y="90" text-anchor="middle">ClienteConta</text><text class="small" x="450" y="111" text-anchor="middle">perfil</text>
+    <rect class="box" x="555" y="68" width="150" height="56" rx="8"/><text class="head" x="630" y="90" text-anchor="middle">Compra</text><text class="small" x="630" y="111" text-anchor="middle">cancelar pedido</text>
+    <rect class="box" x="735" y="68" width="150" height="56" rx="8"/><text class="head" x="810" y="102" text-anchor="middle">MySQL</text>
+  </g>
+  <g class="lifeline">
+    <path d="M90 124V1055"/><path d="M270 124V1055"/><path d="M450 124V1055"/><path d="M630 124V1055"/><path d="M810 124V1055"/>
+  </g>
+  <path class="msg" d="M90 165H270"/><text class="text" x="180" y="153" text-anchor="middle">POST pedido_id + CSRF</text>
+  <rect class="frame" x="197" y="185" width="688" height="68" rx="8"/>
+  <text class="text" x="213" y="213">Valida método/token e exige uma sessão de cliente válida.</text>
+  <text class="small" x="213" y="238">Sem token → HTTP 403; sem cliente → redireciona à entrada.</text>
+  <path class="msg" d="M270 295H450"/><text class="text" x="360" y="283" text-anchor="middle">perfilAtual()</text>
+  <path class="msg" d="M450 340H810"/><text class="text" x="630" y="328" text-anchor="middle">consulta conta ativa e papel cliente</text>
+  <path class="return" d="M810 385H450"/><text class="text" x="630" y="373" text-anchor="middle">perfil do proprietário</text>
+  <path class="msg" d="M270 430H630"/><text class="text" x="450" y="418" text-anchor="middle">cancelarPedidoCliente(id, cliente_id)</text>
+  <path class="msg" d="M630 475H810"/><text class="text" x="720" y="463" text-anchor="middle">BEGIN + pedido do cliente FOR UPDATE</text>
+  <path class="return" d="M810 520H630"/><text class="text" x="720" y="508" text-anchor="middle">estado e titularidade</text>
+  <rect class="frame" x="555" y="540" width="330" height="76" rx="8"/>
+  <text class="text" x="571" y="570">Exige aguardando + pagamento pendente.</text>
+  <text class="small" x="571" y="596">Pedido alheio/avançado → rollback.</text>
+  <path class="msg" d="M630 650H810"/><text class="text" x="720" y="638" text-anchor="middle">lê itens do pedido FOR UPDATE</text>
+  <path class="return" d="M810 695H630"/><text class="text" x="720" y="683" text-anchor="middle">produtos e quantidades</text>
+  <path class="msg" d="M630 740H810"/><text class="text" x="720" y="728" text-anchor="middle">devolve quantidades ao estoque</text>
+  <path class="msg" d="M630 785H810"/><text class="text" x="720" y="773" text-anchor="middle">registra movimentos de entrada</text>
+  <path class="msg" d="M630 830H810"/><text class="text" x="720" y="818" text-anchor="middle">altera pedido/pagamento para cancelado</text>
+  <rect class="frame" x="555" y="850" width="330" height="68" rx="8"/>
+  <text class="text" x="571" y="878">Confere atualização única do pedido.</text>
+  <text class="small" x="571" y="903">Falha em qualquer etapa → rollback integral.</text>
+  <path class="msg" d="M630 950H810"/><text class="text" x="720" y="938" text-anchor="middle">COMMIT</text>
+  <path class="return" d="M630 995H270"/><text class="text" x="450" y="983" text-anchor="middle">resultado verdadeiro / falso</text>
+  <path class="return" d="M270 1040H90"/><text class="text" x="180" y="1028" text-anchor="middle">mensagem e redirecionamento</text>
+</svg>

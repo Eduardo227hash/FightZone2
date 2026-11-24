@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1150" role="img" aria-labelledby="title desc">
+  <title id="title">UML de sequência: finalização de pedido</title>
+  <desc id="desc">Sequência do checkout FightZone, com validação da sessão e do carrinho, transação de pedido, snapshots, movimentos e baixa de estoque.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f1eb}.box{fill:#fffefa;stroke:#171816;stroke-width:2}.lifeline{stroke:#92938c;stroke-width:2;stroke-dasharray:8 7}.msg{stroke:#d8432e;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.return{stroke:#777870;stroke-width:2;fill:none;stroke-dasharray:7 5;marker-end:url(#arrowGray)}.title{fill:#171816;font:bold 22px Arial,sans-serif}.head{fill:#171816;font:bold 15px Arial,sans-serif}.text{fill:#252a32;font:15px Arial,sans-serif}.small{fill:#66675f;font:13px Arial,sans-serif}.frame{fill:#fffefa;stroke:#d8432e;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d8432e"/></marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#777870"/></marker>
+  </defs>
+  <rect class="bg" width="900" height="1150" rx="18"/>
+  <text class="title" x="450" y="40" text-anchor="middle">UML • Checkout e persistência do pedido</text>
+  <g>
+    <rect class="box" x="15" y="68" width="150" height="56" rx="8"/><text class="head" x="90" y="102" text-anchor="middle">Navegador</text>
+    <rect class="box" x="195" y="68" width="150" height="56" rx="8"/><text class="head" x="270" y="90" text-anchor="middle">LojaController</text><text class="small" x="270" y="111" text-anchor="middle">checkout</text>
+    <rect class="box" x="375" y="68" width="150" height="56" rx="8"/><text class="head" x="450" y="90" text-anchor="middle">ClienteConta</text><text class="small" x="450" y="111" text-anchor="middle">perfil</text>
+    <rect class="box" x="555" y="68" width="150" height="56" rx="8"/><text class="head" x="630" y="90" text-anchor="middle">Compra</text><text class="small" x="630" y="111" text-anchor="middle">finalizar()</text>
+    <rect class="box" x="735" y="68" width="150" height="56" rx="8"/><text class="head" x="810" y="102" text-anchor="middle">MySQL</text>
+  </g>
+  <g class="lifeline">
+    <path d="M90 124V1110"/><path d="M270 124V1110"/><path d="M450 124V1110"/><path d="M630 124V1110"/><path d="M810 124V1110"/>
+  </g>
+  <path class="msg" d="M90 165H270"/><text class="text" x="180" y="153" text-anchor="middle">POST checkout + endereço + CSRF</text>
+  <path class="msg" d="M270 210H450"/><text class="text" x="360" y="198" text-anchor="middle">validar perfil do cliente</text>
+  <path class="msg" d="M450 255H810"/><text class="text" x="630" y="243" text-anchor="middle">consulta conta ativa e cadastro</text>
+  <path class="return" d="M810 300H450"/><text class="text" x="630" y="288" text-anchor="middle">dados do cliente</text>
+  <path class="return" d="M450 345H270"/><text class="text" x="360" y="333" text-anchor="middle">perfil válido</text>
+  <rect class="frame" x="197" y="370" width="688" height="82" rx="8"/>
+  <text class="text" x="213" y="399">Confere token, campos, CEP, UF e forma de pagamento.</text>
+  <text class="small" x="213" y="427">Relê produtos e recompõe subtotal/frete no servidor; carrinho vem da sessão.</text>
+  <path class="msg" d="M270 490H630"/><text class="text" x="450" y="478" text-anchor="middle">finalizar(cliente, itens, frete, forma)</text>
+  <rect class="frame" x="555" y="515" width="330" height="54" rx="8"/>
+  <text class="head" x="720" y="539" text-anchor="middle">BEGIN • transação InnoDB</text>
+  <text class="small" x="720" y="559" text-anchor="middle">revalidar dados no banco</text>
+  <path class="msg" d="M630 600H810"/><text class="text" x="720" y="588" text-anchor="middle">produto ativo + estoque FOR UPDATE</text>
+  <path class="return" d="M810 645H630"/><text class="text" x="720" y="633" text-anchor="middle">preço e estoque atuais</text>
+  <rect class="frame" x="555" y="660" width="330" height="72" rx="8"/>
+  <text class="text" x="571" y="689">Valida itens/quantidades.</text>
+  <text class="small" x="571" y="714">Sem estoque ou carrinho vazio → rollback.</text>
+  <path class="msg" d="M630 770H810"/><text class="text" x="720" y="758" text-anchor="middle">grava cliente e pedido aguardando/pendente</text>
+  <path class="msg" d="M630 810H810"/><text class="text" x="720" y="798" text-anchor="middle">grava itens com nome e preço snapshot</text>
+  <path class="msg" d="M630 850H810"/><text class="text" x="720" y="838" text-anchor="middle">baixa estoque e registra movimentos de saída</text>
+  <path class="msg" d="M630 890H810"/><text class="text" x="720" y="878" text-anchor="middle">registra PED-id, sem emissão fiscal</text>
+  <path class="msg" d="M630 930H810"/><text class="text" x="720" y="918" text-anchor="middle">COMMIT</text>
+  <path class="return" d="M630 975H270"/><text class="text" x="450" y="963" text-anchor="middle">id + token aleatório do pedido</text>
+  <rect class="frame" x="197" y="995" width="688" height="62" rx="8"/>
+  <text class="text" x="213" y="1022">Limpa carrinho/frete da sessão e redireciona à confirmação.</text>
+  <text class="small" x="213" y="1045">Qualquer falha durante as gravações reverte o pedido e o estoque.</text>
+  <path class="return" d="M270 1090H90"/><text class="text" x="180" y="1078" text-anchor="middle">redirect para confirmação</text>
+</svg>

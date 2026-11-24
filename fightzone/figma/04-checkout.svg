@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Protótipo FightZone — entrega e pagamento</title>
+  <desc id="desc">Tela demonstrativa do checkout com dados do cliente, endereço, escolha de pagamento e resumo do pedido.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f1eb}.white{fill:#fffefa}.dark{fill:#171816}.muted{fill:#777870}.orange{fill:#d8432e}.title{fill:#171816;font:bold 29px Arial,sans-serif}.body{fill:#252a32;font:16px Arial,sans-serif}.small{fill:#777870;font:13px Arial,sans-serif}.nav{fill:#fffefa;font:15px Arial,sans-serif}.label{fill:#66675f;font:bold 12px Arial,sans-serif;letter-spacing:1px}.field{fill:#fffefa;stroke:#dedbd4;stroke-width:2}.cardtitle{fill:#171816;font:bold 18px Arial,sans-serif}.button{fill:#fffefa;font:bold 14px Arial,sans-serif}
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="1080"/>
+  <rect class="dark" width="1440" height="92"/>
+  <text x="74" y="56" fill="#fffefa" font-family="Arial" font-size="23" font-weight="bold" letter-spacing="3">FIGHT<tspan fill="#e45a42">ZONE</tspan></text>
+  <text class="nav" x="995" y="56">Loja</text><text class="nav" x="1070" y="56">Carrinho</text><text class="nav" x="1175" y="56">Meus pedidos</text>
+  <text class="small" x="72" y="150">SUA CONTA / ÚLTIMO PASSO</text>
+  <text class="title" x="72" y="196">Entrega e pagamento</text>
+  <text class="small" x="72" y="224">Confira seus dados antes de finalizar.</text>
+  <rect class="white" x="72" y="260" width="820" height="708" rx="14" stroke="#dedbd4"/>
+  <text class="cardtitle" x="108" y="307">Seus dados</text>
+  <text class="label" x="108" y="350">NOME COMPLETO</text><rect class="field" x="108" y="364" width="738" height="48" rx="7"/><text class="body" x="124" y="395">Nome da conta • preenchido automaticamente</text>
+  <text class="label" x="108" y="447">E-MAIL</text><rect class="field" x="108" y="461" width="355" height="48" rx="7"/><text class="small" x="124" y="491">E-mail cadastrado • somente leitura</text>
+  <text class="label" x="490" y="447">TELEFONE</text><rect class="field" x="490" y="461" width="356" height="48" rx="7"/><text class="small" x="506" y="491">(opcional)</text>
+  <text class="cardtitle" x="108" y="560">Endereço de entrega</text>
+  <text class="label" x="108" y="600">CEP</text><rect class="field" x="108" y="614" width="355" height="48" rx="7"/><text class="small" x="124" y="644">00000-000</text>
+  <text class="small" x="108" y="685">Preenchimento pelo ViaCEP opcional; confira os dados.</text>
+  <text class="label" x="490" y="600">RUA / AVENIDA</text><rect class="field" x="490" y="614" width="356" height="48" rx="7"/><text class="small" x="506" y="644">Logradouro</text>
+  <text class="label" x="108" y="722">NÚMERO</text><rect class="field" x="108" y="736" width="160" height="48" rx="7"/><text class="small" x="124" y="766">Número</text>
+  <text class="label" x="290" y="722">COMPLEMENTO</text><rect class="field" x="290" y="736" width="173" height="48" rx="7"/><text class="small" x="306" y="766">Opcional</text>
+  <text class="label" x="490" y="722">CIDADE</text><rect class="field" x="490" y="736" width="235" height="48" rx="7"/><text class="small" x="506" y="766">Cidade</text>
+  <text class="label" x="746" y="722">UF</text><rect class="field" x="746" y="736" width="100" height="48" rx="7"/><text class="small" x="762" y="766">UF</text>
+  <text class="cardtitle" x="108" y="836">Forma de pagamento</text>
+  <rect x="108" y="858" width="225" height="50" rx="8" fill="#f8e9e4" stroke="#d8432e" stroke-width="2"/><text class="body" x="132" y="889">◉  PIX</text>
+  <rect class="field" x="345" y="858" width="225" height="50" rx="8"/><text class="body" x="369" y="889">○  Boleto</text>
+  <rect class="field" x="582" y="858" width="264" height="50" rx="8"/><text class="body" x="606" y="889">○  Cartão</text>
+  <text class="small" x="108" y="938">Escolha registrada no pedido. O protótipo não processa pagamentos.</text>
+  <rect class="white" x="922" y="260" width="446" height="400" rx="14" stroke="#dedbd4"/>
+  <text class="cardtitle" x="958" y="307">Resumo do pedido</text>
+  <text class="body" x="958" y="358">1 × Luva Title Boxing</text><text class="body" x="1332" y="358" text-anchor="end">R$ 699,90</text>
+  <text class="body" x="958" y="400">1 × Bandagem Elástica</text><text class="body" x="1332" y="400" text-anchor="end">R$ 69,90</text>
+  <line x1="958" y1="427" x2="1332" y2="427" stroke="#dedbd4"/>
+  <text class="body" x="958" y="466">Subtotal</text><text class="body" x="1332" y="466" text-anchor="end">R$ 769,80</text>
+  <text class="body" x="958" y="505">Frete estimado</text><text class="body" x="1332" y="505" text-anchor="end">R$ 24,90</text>
+  <line x1="958" y1="531" x2="1332" y2="531" stroke="#dedbd4"/>
+  <text class="cardtitle" x="958" y="574">Total</text><text x="1332" y="574" fill="#d8432e" font-family="Arial" font-size="22" font-weight="bold" text-anchor="end">R$ 794,70</text>
+  <rect x="958" y="602" width="374" height="52" rx="8" fill="#d8432e"/><text class="button" x="1145" y="634" text-anchor="middle">Finalizar pedido</text>
+  <rect x="922" y="684" width="446" height="168" rx="14" fill="#f8e9e4"/>
+  <text x="958" y="728" fill="#a92d20" font-family="Arial" font-size="15" font-weight="bold">ATENÇÃO</text>
+  <text class="body" x="958" y="759">Sem campos de cartão ou cobrança real.</text>
+  <text class="small" x="958" y="789">Valores e opções são demonstrativos; confira</text>
+  <text class="small" x="958" y="812">o destinatário antes de fazer qualquer PIX.</text>
+  <text class="small" x="72" y="1034">FIGHTZONE • Protótipo visual para o manual do usuário — não é captura real da aplicação</text>
+</svg>

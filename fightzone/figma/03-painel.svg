@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Protótipo FightZone — painel administrativo</title>
+  <desc id="desc">Tela de painel com navegação administrativa, indicadores de vendas, pedidos pendentes e estoque baixo.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f1eb}.white{fill:#fffefa}.dark{fill:#171816}.side{fill:#20211e}.muted{fill:#777870}.orange{fill:#d8432e}.title{fill:#171816;font:bold 29px Arial,sans-serif}.body{fill:#252a32;font:15px Arial,sans-serif}.small{fill:#777870;font:12px Arial,sans-serif}.sideText{fill:#c1c0b8;font:14px Arial,sans-serif}.active{fill:#fffefa;font:bold 14px Arial,sans-serif}.label{fill:#777870;font:bold 12px Arial,sans-serif;letter-spacing:1px}.value{fill:#171816;font:bold 27px Arial,sans-serif}.whiteText{fill:#fffefa;font:bold 16px Arial,sans-serif}
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="1000"/>
+  <rect class="side" width="260" height="1000"/>
+  <text x="34" y="58" fill="#fffefa" font-family="Arial" font-size="22" font-weight="bold" letter-spacing="3">FIGHT<tspan fill="#e45a42">ZONE</tspan></text>
+  <text x="34" y="103" fill="#777870" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="2">PAINEL DA EQUIPE</text>
+  <rect x="18" y="139" width="224" height="49" rx="8" fill="#d8432e"/>
+  <text class="active" x="48" y="170">◉  Visão geral</text>
+  <text class="sideText" x="48" y="231">▦  Produtos</text>
+  <text class="sideText" x="48" y="284">▤  Entradas de estoque</text>
+  <text class="sideText" x="48" y="337">▣  Categorias</text>
+  <text class="sideText" x="48" y="390">▧  Pedidos</text>
+  <text class="sideText" x="48" y="443">▥  Relatórios</text>
+  <line x1="30" y1="910" x2="230" y2="910" stroke="#42433d"/>
+  <text class="sideText" x="48" y="953">↪  Sair</text>
+  <rect class="white" x="260" width="1180" height="78"/>
+  <text class="small" x="302" y="34">FightZone / Painel</text>
+  <text class="body" x="302" y="58" font-weight="bold">Bem-vindo, Gerente</text>
+  <circle cx="1372" cy="39" r="20" fill="#f8e9e4"/><text x="1372" y="44" fill="#a92d20" font-family="Arial" font-weight="bold" font-size="13" text-anchor="middle">GF</text>
+  <text class="title" x="302" y="138">Visão geral</text>
+  <text class="small" x="302" y="169">Acompanhe os principais indicadores da loja.</text>
+  <g transform="translate(302 204)">
+    <rect class="white" width="250" height="142" rx="12" stroke="#dedbd4"/>
+    <text class="label" x="22" y="38">PEDIDOS NO MÊS</text><text class="value" x="22" y="84">48</text>
+    <text x="22" y="118" fill="#498458" font-family="Arial" font-size="13">↑ 12% no período</text>
+  </g>
+  <g transform="translate(576 204)">
+    <rect class="white" width="250" height="142" rx="12" stroke="#dedbd4"/>
+    <text class="label" x="22" y="38">FATURAMENTO PAGO</text><text class="value" x="22" y="84">R$ 8,4 mil</text>
+    <text class="small" x="22" y="118">Pedidos registrados</text>
+  </g>
+  <g transform="translate(850 204)">
+    <rect class="white" width="250" height="142" rx="12" stroke="#dedbd4"/>
+    <text class="label" x="22" y="38">AGUARDANDO</text><text class="value" x="22" y="84">7</text>
+    <text class="small" x="22" y="118">Pedidos pendentes</text>
+  </g>
+  <g transform="translate(1124 204)">
+    <rect class="white" width="250" height="142" rx="12" stroke="#dedbd4"/>
+    <text class="label" x="22" y="38">ESTOQUE BAIXO</text><text class="value" x="22" y="84">4</text>
+    <text x="22" y="118" fill="#a92d20" font-family="Arial" font-size="13">Revisar produtos</text>
+  </g>
+  <rect class="white" x="302" y="379" width="680" height="380" rx="12" stroke="#dedbd4"/>
+  <text class="body" x="330" y="421" font-weight="bold">Vendas recentes</text>
+  <text class="small" x="330" y="448">Acompanhamento de pedidos</text>
+  <rect x="330" y="476" width="624" height="40" fill="#f4f1eb"/>
+  <text class="label" x="348" y="501">PEDIDO</text><text class="label" x="462" y="501">CLIENTE</text><text class="label" x="680" y="501">TOTAL</text><text class="label" x="806" y="501">STATUS</text>
+  <line x1="330" y1="562" x2="954" y2="562" stroke="#dedbd4"/><line x1="330" y1="610" x2="954" y2="610" stroke="#dedbd4"/>
+  <line x1="330" y1="658" x2="954" y2="658" stroke="#dedbd4"/><line x1="330" y1="706" x2="954" y2="706" stroke="#dedbd4"/>
+  <text class="body" x="348" y="546">#1048</text><text class="body" x="462" y="546">Ana Souza</text><text class="body" x="680" y="546">R$ 699,90</text>
+  <rect x="806" y="528" width="120" height="27" rx="13" fill="#f8e9e4"/><text x="866" y="546" fill="#a92d20" font-family="Arial" font-size="12" text-anchor="middle">Aguardando</text>
+  <text class="body" x="348" y="594">#1047</text><text class="body" x="462" y="594">Carlos Lima</text><text class="body" x="680" y="594">R$ 249,90</text>
+  <rect x="806" y="576" width="120" height="27" rx="13" fill="#e7f2e7"/><text x="866" y="594" fill="#416c45" font-family="Arial" font-size="12" text-anchor="middle">Pago</text>
+  <text class="body" x="348" y="642">#1046</text><text class="body" x="462" y="642">Marina Alves</text><text class="body" x="680" y="642">R$ 899,90</text>
+  <rect x="806" y="624" width="120" height="27" rx="13" fill="#e7edf5"/><text x="866" y="642" fill="#425b77" font-family="Arial" font-size="12" text-anchor="middle">Separação</text>
+  <text class="body" x="348" y="690">#1045</text><text class="body" x="462" y="690">João Santos</text><text class="body" x="680" y="690">R$ 129,90</text>
+  <rect x="806" y="672" width="120" height="27" rx="13" fill="#f8e9e4"/><text x="866" y="690" fill="#a92d20" font-family="Arial" font-size="12" text-anchor="middle">Aguardando</text>
+  <text class="small" x="330" y="735">Indicadores ilustrativos para prototipação.</text>
+  <rect class="white" x="1008" y="379" width="366" height="380" rx="12" stroke="#dedbd4"/>
+  <text class="body" x="1036" y="421" font-weight="bold">Atenção ao estoque</text>
+  <text class="small" x="1036" y="448">Produtos com poucas unidades</text>
+  <circle cx="1052" cy="500" r="8" fill="#d8432e"/><text class="body" x="1074" y="505">Luva Title Boxing</text><text class="small" x="1342" y="505" text-anchor="end">2 un.</text>
+  <circle cx="1052" cy="555" r="8" fill="#d8432e"/><text class="body" x="1074" y="560">Bandagem Elástica</text><text class="small" x="1342" y="560" text-anchor="end">3 un.</text>
+  <circle cx="1052" cy="610" r="8" fill="#d8432e"/><text class="body" x="1074" y="615">Bucal Maximum</text><text class="small" x="1342" y="615" text-anchor="end">4 un.</text>
+  <rect x="1036" y="674" width="310" height="48" rx="8" fill="#171816"/>
+  <text class="whiteText" x="1191" y="704" text-anchor="middle">Ver produtos</text>
+  <text class="small" x="302" y="832">Ambiente demonstrativo • valores de exemplo • sem conexão com dados reais</text>
+  <text class="small" x="302" y="970">FIGHTZONE • Protótipo visual para avaliação acadêmica</text>
+</svg>

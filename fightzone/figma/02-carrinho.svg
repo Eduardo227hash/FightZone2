@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Protótipo FightZone — carrinho</title>
+  <desc id="desc">Tela de carrinho com itens, quantidades, estimativa de frete e resumo de compra.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f1eb}.white{fill:#fffefa}.dark{fill:#171816}.muted{fill:#777870}.orange{fill:#d8432e}.title{fill:#171816;font:bold 29px Arial,sans-serif}.body{fill:#252a32;font:16px Arial,sans-serif}.small{fill:#777870;font:13px Arial,sans-serif}.nav{fill:#fffefa;font:16px Arial,sans-serif}.button{fill:#fffefa;font:bold 14px Arial,sans-serif}.cardtitle{fill:#171816;font:bold 18px Arial,sans-serif}.price{fill:#171816;font:bold 19px Arial,sans-serif}
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="1000"/>
+  <rect class="dark" width="1440" height="92"/>
+  <text x="76" y="56" fill="#fffefa" font-family="Arial" font-size="23" font-weight="bold" letter-spacing="3">FIGHT<tspan fill="#e45a42">ZONE</tspan></text>
+  <text class="nav" x="390" y="56">Início</text><text class="nav" x="480" y="56">Produtos</text>
+  <text class="nav" x="610" y="56">Meus pedidos</text>
+  <rect x="1324" y="23" width="62" height="46" rx="8" fill="#d8432e"/><text class="button" x="1355" y="52" text-anchor="middle">2</text>
+  <text class="small" x="72" y="151">LOJA / CARRINHO</text>
+  <text class="title" x="72" y="201">Seu carrinho</text>
+  <text class="small" x="72" y="230">Confira seus itens e a estimativa de entrega.</text>
+  <rect class="white" x="72" y="270" width="850" height="146" rx="12" stroke="#dedbd4"/>
+  <rect x="94" y="292" width="104" height="102" rx="9" fill="#ece8df"/>
+  <circle cx="146" cy="343" r="31" fill="#d8432e"/><path d="M127 339q20-22 40 0l-11 20-33-10z" fill="#171816"/>
+  <text class="cardtitle" x="225" y="320">Luva Title Boxing</text><text class="small" x="225" y="350">Cor vermelha • 16 oz</text>
+  <text class="price" x="225" y="385">R$ 699,90</text>
+  <rect x="648" y="326" width="116" height="42" rx="8" fill="#f4f1eb" stroke="#dedbd4"/>
+  <text class="body" x="670" y="353">−</text><text class="body" x="706" y="353">1</text><text class="body" x="741" y="353">+</text>
+  <text x="869" y="353" fill="#d8432e" font-family="Arial" font-size="20" text-anchor="middle">×</text>
+  <rect class="white" x="72" y="434" width="850" height="146" rx="12" stroke="#dedbd4"/>
+  <rect x="94" y="456" width="104" height="102" rx="9" fill="#ece8df"/>
+  <circle cx="146" cy="507" r="31" fill="#171816"/><path d="M134 481h24v52h-24z" fill="#d8432e"/>
+  <text class="cardtitle" x="225" y="484">Bandagem Elástica</text><text class="small" x="225" y="514">Bandagem de treino • 5 m</text>
+  <text class="price" x="225" y="549">R$ 69,90</text>
+  <rect x="648" y="490" width="116" height="42" rx="8" fill="#f4f1eb" stroke="#dedbd4"/>
+  <text class="body" x="670" y="517">−</text><text class="body" x="706" y="517">1</text><text class="body" x="741" y="517">+</text>
+  <text x="869" y="517" fill="#d8432e" font-family="Arial" font-size="20" text-anchor="middle">×</text>
+  <text class="small" x="72" y="635">← Continuar comprando</text>
+  <rect class="white" x="958" y="270" width="410" height="458" rx="12" stroke="#dedbd4"/>
+  <text class="cardtitle" x="990" y="316">Resumo do pedido</text>
+  <text class="body" x="990" y="366">Subtotal</text><text class="body" x="1335" y="366" text-anchor="end">R$ 769,80</text>
+  <text class="body" x="990" y="407">Frete estimado</text><text class="body" x="1335" y="407" text-anchor="end">R$ 24,90</text>
+  <line x1="990" y1="435" x2="1336" y2="435" stroke="#dedbd4"/>
+  <text class="cardtitle" x="990" y="476">Total</text><text x="1335" y="476" fill="#d8432e" font-family="Arial" font-size="22" font-weight="bold" text-anchor="end">R$ 794,70</text>
+  <text class="small" x="990" y="532">Calcular frete pelo CEP</text>
+  <rect x="990" y="548" width="220" height="46" rx="8" fill="#fffefa" stroke="#dedbd4"/>
+  <text class="small" x="1008" y="577">00000-000</text>
+  <rect x="1220" y="548" width="116" height="46" rx="8" fill="#292a26"/>
+  <text class="button" x="1278" y="577" text-anchor="middle">Calcular</text>
+  <rect x="990" y="618" width="346" height="54" rx="9" fill="#d8432e"/>
+  <text class="button" x="1163" y="652" text-anchor="middle">Continuar para entrega</text>
+  <text class="small" x="990" y="708">Frete ilustrativo; não é cotação de transportadora.</text>
+  <rect x="72" y="743" width="1296" height="95" rx="12" fill="#f8e9e4"/>
+  <text x="101" y="782" fill="#a92d20" font-family="Arial" font-size="15" font-weight="bold">SUA COMPRA, SEU RITMO</text>
+  <text class="body" x="101" y="812">Os meios de pagamento apresentados são demonstrativos e não processam cobranças.</text>
+  <text class="small" x="72" y="970">FIGHTZONE • Protótipo visual para avaliação acadêmica</text>
+</svg>
